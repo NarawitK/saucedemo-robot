@@ -94,15 +94,14 @@ Log Every Price for Debugging Purpose
 Logout
     Click Button    react-burger-menu-btn
     Click Element    css:a#logout_sidebar_link
+    
+Session cookie should not exist
     ${cookie}=    Set Variable    ${None}
-    TRY
-        ${cookie}=    Get Cookie    session-username
-        Log To Console    ${cookie.name}
-        Fail    ${COOKIE_SHOULD_NOT_EXIST_AFTER_LOGOUT_MSG}
-    EXCEPT    Cookie with name 'session-username' not found.
-        Log To Console    ${cookie}
-        Should Be Equal    ${cookie}    ${None}
-    END
-
+        TRY
+            ${cookie}=    Get Cookie    session-username
+            Fail    ${COOKIE_SHOULD_NOT_EXIST_AFTER_LOGOUT_MSG}
+        EXCEPT    Cookie with name 'session-username' not found.
+            Should Be Equal    ${cookie}    ${None}
+        END
 Current Page should have Login Button
     Page Should Contain Button    css:#login-button    Page doesn't have Login Button. Perhaps still not logged out 

@@ -42,6 +42,7 @@ Assert Price against Net-Price from Checkout Pt.2
 
 Logout
     Logout
+    Session cookie should not exist
     Location Should Be    ${LOGIN_URL}
     Current Page should have Login Button
     [Teardown]    Close Browser

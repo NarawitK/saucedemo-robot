@@ -15,7 +15,9 @@
     - On Windows Command Prompt `.\Scripts\activate.bat`
 5. Install Python Dependencies
 `pip install -r requirements.txt`
-6. You can start Test Suite by `robot ./Test/test_suite.robot`
+6. You can change which browser you prefer to use in `Variables/test_suite.py`
+    - Change value of `BROWSER` Variable. For available value, Please refer to [SeleniumLibrary - Open Browser](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Open%20Browser)
+7. You can start Test Suite by `robot ./Test/test_suite.robot`
 
 More information about Robot Framework, Please refer to [Robot Framework Documentation](https://docs.robotframework.org/)
 and [Robot Framework Selenium Library](https://docs.robotframework.org/docs/different_libraries/selenium)
