@@ -1,4 +1,5 @@
 # Sauce Demo Robot Framework Automate Testing - Selenium lib
+
 ## Description
 [Under Construction]
 ## Setup & How to use it
@@ -15,5 +16,6 @@
 5. Install Python Dependencies
 `pip install -r requirements.txt`
 6. You can start Test Suite by `robot ./Test/test_suite.robot`
+
 More information about Robot Framework, Please refer to [Robot Framework Documentation](https://docs.robotframework.org/)
 and [Robot Framework Selenium Library](https://docs.robotframework.org/docs/different_libraries/selenium)
